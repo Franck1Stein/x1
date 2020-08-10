@@ -16,6 +16,10 @@
 
             <hr>
 
+            <x-alert>
+
+            </x-alert>
+
             <form action="/todos/create" method="post"class="py-5">
                 @csrf
 
