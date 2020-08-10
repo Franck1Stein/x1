@@ -1,9 +1,10 @@
 <?php
 
-Route::get('/todos', 'TodoController@index');
-Route::get('/todos/create', 'TodoController@create');
-Route::post('/todos/create', 'TodoController@store');
-Route::get('/todos/edit', 'TodoController@edit');
+Route::get('/todos', 'TodoController@index')->name('todo.index');
+Route::get('/todos/create', 'TodoController@create')->name('todo.create');
+Route::post('/todos/create', 'TodoController@store')->name('todo.store');
+Route::patch('/todos/{todo}/update', 'TodoController@update')->name('todo.update');
+Route::get('/todos/{todo}/edit', 'TodoController@edit')->name('todo.edit');
 
 
 Route::get('/', function () {

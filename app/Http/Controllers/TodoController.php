@@ -3,45 +3,36 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\TodoCreateRequest;
-use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
 use App\Todo;
 
 class TodoController extends Controller
 {
     public function index() {
-        return view('todos.index');
+        $todos = Todo::all();
+        return view('todos.index', compact('todos'));
     }
 
     public function create() {
         return view('todos.create');
     }
 
-    public function edit() {
-        return view('todos.edit');
+    public function edit(Todo $todo) {
+        // $todo = Todo::find($todo); //Dynamic model binding will take care of that
+        return view('todos.edit', compact('todo'));
     }
 
     public function store(TodoCreateRequest $request) {
 
-//        $request->validate([
-//            'title' => 'required|max:255',
-//        ]);
-
-        // $input = $request->all(),
-        // $rules come from Validator request form
-//        $messages = [
-//            'title.max' => 'the todo title should not be greater than 255 chars',
-//        ];
-//        $validator = Validator::make($request->all(), $rules, $messages);
-//
-//        if ($validator->fails()) {
-//            return redirect()->back()
-//                             ->withErrors($validator)
-//                             ->withInput();
-//        }
-
-        Todo::create($request->all());
+        Todo::create( $request->all() );
 
         return redirect()->back()->with('message', 'Todo created successfully');
+    }
+
+    public function update(TodoCreateRequest $request, Todo $todo) {
+        $todo->update(['title' => $request->title]);
+
+        return redirect(route('todo.index'))->with('message', 'Updated!!');
     }
 
 }

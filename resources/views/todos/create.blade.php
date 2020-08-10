@@ -1,24 +1,13 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <title>Todos</title>
-</head>
-    <body>
 
-        <div class="text-center pt-10">
+@extends('layouts.todo')
 
-            <h1 class="2xl">What next you need To-Do</h1>
+@section('content')
+
+            <h1 class="2xl border-bottom pb-4">What next you need To-Do</h1>
 
             <hr>
 
-            <x-alert>
-
-            </x-alert>
+            <x-alert />
 
             <form action="/todos/create" method="post"class="py-5">
                 @csrf
@@ -29,7 +18,8 @@
 
             </form>
 
-        </div>
+            <a href="/todos" class="m-5 py-1 px-1 bg-blue-300 cursor-pointer rounded text-white">Back</a>
 
-    </body>
-</html>
+@endsection
+
+
