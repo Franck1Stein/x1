@@ -10,7 +10,7 @@
 
     </x-alert>
 
-    <form action="{{ route('todo.update',$todo->id) }}" method="post"class="py-5">
+    <form action="{{ route('todos.update', $todo->id) }}" method="post" class="py-5">
         @csrf
         @method('patch')
 
@@ -20,6 +20,6 @@
 
     </form>
 
-    <a href="/todos" class="m-5 py-1 px-1 bg-blue-300 cursor-pointer rounded text-white">Back</a>
+    <a href="{{ route('todos.index') }}" class="m-5 py-1 px-1 bg-blue-300 cursor-pointer rounded text-white">Back</a>
 
 @endsection

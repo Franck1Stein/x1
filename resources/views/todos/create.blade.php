@@ -9,7 +9,7 @@
 
             <x-alert />
 
-            <form action="/todos/create" method="post"class="py-5">
+            <form action="{{ route('todos.create') }}" method="post"class="py-5">
                 @csrf
 
                 <input type="text" name="title" class="py-2 px-2 rounded-lg">
@@ -18,7 +18,7 @@
 
             </form>
 
-            <a href="/todos" class="m-5 py-1 px-1 bg-blue-300 cursor-pointer rounded text-white">Back</a>
+            <a href="{{ route('todos.index') }}" class="m-5 py-1 px-1 bg-blue-300 cursor-pointer rounded text-white">Back</a>
 
 @endsection
 
