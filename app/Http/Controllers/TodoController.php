@@ -2,13 +2,6 @@
 
 namespace App\Http\Controllers;
 
-<<<<<<< HEAD
-use Illuminate\Http\Request;
-
-class TodoController extends Controller
-{
-    //
-=======
 use App\Http\Requests\TodoCreateRequest;
 use Illuminate\Http\Request;
 use App\Todo;
@@ -48,6 +41,4 @@ class TodoController extends Controller
 
         return redirect()->back()->with('message', 'Task Marked as completed');
     }
-
->>>>>>> feature1
 }

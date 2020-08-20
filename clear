@@ -1,0 +1,53 @@
+[33mcommit 36f3a38c567ceea43d257b5be9ecaa79d1aa264f[m[33m ([m[1;36mHEAD -> [m[1;32mfeature1[m[33m, [m[1;31morigin/feature1[m[33m)[m
+Author: Franck1Stein <franck.komla@gmail.com>
+Date:   Tue Aug 18 13:49:10 2020 +0000
+
+    inline Js in Lxv w/ hidden form
+
+[33mcommit 5918dcfa085e9234ab6613b503ce08b748e1400a[m
+Author: Franck1Stein <franck.komla@gmail.com>
+Date:   Mon Aug 10 12:33:24 2020 +0000
+
+    update and clean up completed
+
+[33mcommit b4a0f94496dce5e1111e13076226cf7941214879[m
+Author: Franck1Stein <franck.komla@gmail.com>
+Date:   Mon Aug 10 08:04:34 2020 +0000
+
+    Custom Validation done
+
+[33mcommit 618da98b45bc8184ddf4807d8edfa6fb50bd61e8[m
+Author: Franck1Stein <franck.komla@gmail.com>
+Date:   Sun Aug 9 10:49:53 2020 +0000
+
+    feature1: Form Validation start here
+
+[33mcommit 626b2ddec4cd08dbe014035a2ed608e91d404a10[m
+Author: Franck1Stein <franck.komla@gmail.com>
+Date:   Sun Aug 9 09:35:42 2020 +0000
+
+    Todo mini Project: feature1 start here
+
+[33mcommit 02d4ca71745a4c6b020bd8d94d0cdeb734293b5f[m
+Author: Franck1Stein <franck.komla@gmail.com>
+Date:   Sun Aug 9 04:03:14 2020 +0000
+
+    Storage: user avatar section completed successfully
+
+[33mcommit 8d7fec5d96a8f9c18a2d04e866c09d2427571d95[m
+Author: Franck1Stein <franck.komla@gmail.com>
+Date:   Wed Aug 5 07:55:48 2020 +0000
+
+    scaffolding done
+
+[33mcommit ddcd113e07003ac5352da2bd63ae212d684a1388[m
+Author: Franck1Stein <franck.komla@gmail.com>
+Date:   Wed Aug 5 07:50:44 2020 +0000
+
+    ui scaffolding done
+
+[33mcommit 6db5b8283783fb3007fda6af30066a085d4542e7[m
+Author: Franck1Stein <franck.komla@gmail.com>
+Date:   Mon Aug 3 02:56:37 2020 +0000
+
+    first commit on master branch after initializing the project
